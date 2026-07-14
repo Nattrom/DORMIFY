@@ -1,8 +1,8 @@
-# 🏠 Dormify — Plataforma de Alojamiento Estudiantil
+#  Dormify — Plataforma de Alojamiento Estudiantil
 
 Dormify es una plataforma web dirigida a estudiantes universitarios que buscan habitaciones, apartamentos o residencias cerca de sus universidades. Incluye módulos de **Arriendos**, **Servicios** y un **Foro** comunitario.
 
-## 📋 Módulos del MVP
+##  Módulos del MVP
 
 | Módulo | Descripción |
 |--------|-------------|
@@ -10,7 +10,7 @@ Dormify es una plataforma web dirigida a estudiantes universitarios que buscan h
 | **Servicios** | Directorio de servicios útiles (lavandería, plomería, papelería, mudanzas, etc.) |
 | **Foro** | Espacio para publicaciones y comentarios de la comunidad estudiantil |
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 - **Backend:** Python 3.10+ con FastAPI
 - **Frontend:** HTML5 + CSS3 + JavaScript Vanilla (SPA)
@@ -19,7 +19,7 @@ Dormify es una plataforma web dirigida a estudiantes universitarios que buscan h
 - **Autenticación:** JWT (JSON Web Tokens)
 - **Estilos:** Bootstrap 5 + CSS Custom
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 dormify/
@@ -54,7 +54,7 @@ dormify/
 └── README.md
 ```
 
-## 🚀 Instalación y Ejecución
+##  Instalación y Ejecución
 
 ### Requisitos Previos
 
@@ -130,7 +130,7 @@ python -m http.server 5500
 
 El frontend estará disponible en: `http://localhost:5500`
 
-## 👤 Usuarios de Prueba
+##  Usuarios de Prueba
 
 | Email | Contraseña | Rol |
 |-------|-----------|-----|
@@ -138,7 +138,7 @@ El frontend estará disponible en: `http://localhost:5500`
 | propietario@dormify.com | 123456 | Propietario |
 | proveedor@dormify.com | 123456 | Proveedor de Servicios |
 
-## 📌 Roles de Usuario
+##  Roles de Usuario
 
 | Rol | Permisos |
 |-----|----------|
@@ -146,7 +146,7 @@ El frontend estará disponible en: `http://localhost:5500`
 | **Propietario** | Todo lo anterior + publicar/editar/eliminar arriendos |
 | **Proveedor** | Todo lo anterior + publicar/editar/eliminar servicios |
 
-## 📚 API Endpoints
+##  API Endpoints
 
 | Método | Endpoint | Descripción |
 |--------|----------|-------------|
@@ -167,6 +167,6 @@ El frontend estará disponible en: `http://localhost:5500`
 | POST | `/api/favorites/` | Agregar favorito |
 | DELETE | `/api/favorites/{id}` | Eliminar favorito |
 
-## 📄 Licencia
+##  Licencia
 
 Proyecto académico — Universidad. Todos los derechos reservados.
