@@ -1,0 +1,27 @@
+[project]
+name = "dormify-backend"
+version = "1.0.0"
+description = "API REST para la plataforma Dormify — alojamiento estudiantil, servicios y comunidad."
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.115.0",
+    "uvicorn[standard]==0.30.6",
+    "sqlalchemy==2.0.35",
+    "psycopg2-binary==2.9.9",
+    "python-jose[cryptography]==3.3.0",
+    "passlib[bcrypt]==1.7.4",
+    "python-multipart==0.0.12",
+    "python-dotenv==1.0.1",
+    "pydantic[email]==2.9.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pyright]
+pythonVersion = "3.10"
+venvPath = "."
+extraPaths = ["."]
+
+[tool.pylsp-mypy]
+overrides = ["--python-path", "."]
