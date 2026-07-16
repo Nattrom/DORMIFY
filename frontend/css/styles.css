@@ -81,7 +81,11 @@
     --glass-blur: blur(20px);
 
     /* ── Tipografía ── */
+    /* Inter: texto de interfaz, cuerpo, botones, datos.            */
+    /* Fraunces: serif display cálida para títulos y marca — le da  */
+    /* al kaki/verde bosque un carácter editorial y premium.        */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-family-display: 'Fraunces', Georgia, 'Iowan Old Style', 'Times New Roman', serif;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -130,6 +134,33 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Jerarquía tipográfica global ---------- */
+/* Toda etiqueta de encabezado usa la serif display (Fraunces).     */
+/* Las clases específicas de abajo pueden ajustar tamaño/peso, pero */
+/* heredan esta familia, el tracking y el line-height por defecto.  */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-display);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-verde-oscuro);
+}
+
+/* La marca también usa la serif display para reforzar identidad */
+.navbar-brand,
+.footer-brand {
+    font-family: var(--font-family-display);
+}
+
+/* Cifras y datos permanecen en Inter: una sans tabular se lee      */
+/* mejor que una serif para precios, contadores y estadísticas.     */
+.hero-stat-number,
+.detail-price,
+.stat-number {
+    font-family: var(--font-family);
+    font-variant-numeric: tabular-nums;
 }
 
 /* Custom Scrollbar */
@@ -185,8 +216,8 @@ a:hover {
 
 .navbar-brand {
     font-size: var(--font-size-xl);
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -344,14 +375,16 @@ a:hover {
 
 .hero-title {
     font-size: var(--font-size-5xl);
-    font-weight: 800;
-    line-height: 1.1;
+    font-weight: 600;
+    line-height: 1.05;
     margin-bottom: 1.5rem;
-    letter-spacing: -1px;
+    letter-spacing: -0.02em;
     color: var(--color-hueso-puro);
 }
 
 .hero-title .highlight {
+    font-style: italic;
+    font-weight: 500;
     color: var(--color-kaki-light);
     -webkit-text-fill-color: initial;
     background: none;
@@ -421,7 +454,7 @@ a:hover {
 
 .section-title {
     font-size: var(--font-size-3xl);
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 0.75rem;
     color: var(--color-verde-oscuro);
 }
@@ -736,7 +769,7 @@ textarea.form-control {
 
 .auth-title {
     font-size: var(--font-size-2xl);
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 0.5rem;
 }
@@ -862,7 +895,7 @@ textarea.form-control {
 
 .detail-title {
     font-size: var(--font-size-3xl);
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--color-verde-oscuro);
 }
@@ -1095,7 +1128,7 @@ textarea.form-control {
 
 .profile-info h2 {
     font-size: var(--font-size-2xl);
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 0.25rem;
     color: var(--color-text);
 }
@@ -1341,7 +1374,7 @@ textarea.form-control {
 
 .page-title {
     font-size: var(--font-size-3xl);
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--color-verde-oscuro);
 }
