@@ -54,8 +54,9 @@ export async function render() {
                         </div>
                     </div>
                     <div class="col-lg-5 d-none d-lg-block">
-                        <div class="text-center" style="font-size: 12rem; opacity: 0.15; line-height: 1;">
-                            🏠
+                        <div class="col-lg-5 d-none d-lg-block text-center">
+                            <img src="assets/logoDormify.svg" alt="Dormify Logo" 
+                            style="height: 480px; width: 500px; opacity: 0.15; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.4));">
                         </div>
                     </div>
                 </div>

@@ -199,6 +199,17 @@ a:hover {
 }
 
 /* ---------- NAVBAR ---------- */
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
+.navbar-brand {
+    gap: 8px;
+}
 #main-navbar {
     background: rgba(19, 54, 51, 0.95);
     backdrop-filter: var(--glass-blur);
@@ -1273,6 +1284,10 @@ textarea.form-control {
 }
 
 /* ---------- FOOTER ---------- */
+
+.footer .row {
+    align-items: flex-start;
+}
 .footer {
     background: var(--color-verde-oscuro);
     border-top: none;

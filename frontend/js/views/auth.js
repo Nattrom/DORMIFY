@@ -14,8 +14,8 @@ export const loginView = {
         return `
             <div class="auth-page">
                 <div class="auth-card animate-slide-up">
-                    <div class="text-center mb-3">
-                        <i class="bi bi-house-heart-fill" style="font-size: 2.5rem; color: var(--color-verde-bosque);"></i>
+                    <div class="text-center mb-4">
+                         <img src="assets/logoDormify.svg" alt="Dormify Logo" style="height: 95px; width: auto;">
                     </div>
                     <h2 class="auth-title">Bienvenido de vuelta</h2>
                     <p class="auth-subtitle">Inicia sesión en tu cuenta de Dormify</p>
@@ -91,8 +91,8 @@ export const registerView = {
         return `
             <div class="auth-page">
                 <div class="auth-card animate-slide-up" style="max-width: 520px;">
-                    <div class="text-center mb-3">
-                        <i class="bi bi-house-heart-fill" style="font-size: 2.5rem; color: var(--color-verde-bosque);"></i>
+                   <div class="text-center mb-4">
+                        <img src="assets/logoDormify.svg" alt="Dormify Logo" style="height: 95px; width: auto;">
                     </div>
                     <h2 class="auth-title">Crea tu cuenta</h2>
                     <p class="auth-subtitle">Únete a la comunidad estudiantil de Dormify</p>
