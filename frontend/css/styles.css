@@ -237,6 +237,7 @@ a:hover {
 .navbar-brand i {
     font-size: 1.5rem;
     color: var(--color-kaki-light);
+    
 }
 
 .navbar-brand span {
@@ -1510,9 +1511,15 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-    .hero-section {
+   .hero-section {
         min-height: 70vh;
-        padding: 2rem 0;
+        padding: 6rem 0 2rem 0; 
+    }
+
+    .footer [class*="col-"] {
+        
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     .hero-title {
@@ -1622,6 +1629,7 @@ textarea.form-control {
     }
 }
 @media (max-width: 576px) {
+    
     .hero-title {
         font-size: var(--font-size-2xl);
     }
